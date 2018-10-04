@@ -12,20 +12,29 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 ## BIOS Update
 
     1. Download Rufus (https://rufus.akeo.ie/) and format a usb to be “GPT Partitioning scheme for UEFI” and Filesystem set as “FAT32.” USB must be in the top USB port; usb boot does not work on the other.
+
     2. Copy the files from tha BIOS zip that you want to install (603 is the latest available BIOS at the time of writing), to the USB device partitioned earlier, and make sure that the EFI folder is placed at the root folder of the device.
+
     3. Shutdown the laptop.
+
     4. Switch on and keep pressing F2 to enter BIOS. Disable secure boot, clear keys and enable USB boot. Set a supervisior password and press F10 to save changes and restart. Shutdown PC.
+
     5. Switch on and keep pressing F12 to enter boot selection menu, where we select the USB drive. The UEFI shell should load until we see a fs: .
+
     6. We type unlockme in the to unlock bios. This is will boot into windows but there is a high chance we wont be able to login. Shutdown the PC.
+
     7. Repeat step 5 and then we type flash to begin the flash process. This will reboot and start flashing. BE PATIENT and let it finish. It will boot into windows finally.
+
     8. Fingerprint might not work, we will need to type in our password to log in.
+
     9. We can use same instructions as Step 4 to enable secure boot and other settings we may want.
+
 
 ## Mod Installation
 
     Several mods are available in the Patches folder. In order for them to work you need to be in the 603 BIOS version, so update if needed.
 
-    # Fan Curve Patch
+    ** Fan Curve Patch **
 
     The default version is +12°, if you need the version +20°, replace ec604.bin with the corresponding one from the /EC folder. If you need to be able to charge the laptop through the hub, use the /EC502 folder. If you want to create your own profile, take the original EC file from the EC/Orig or EC502/Orig folder and edit using https://github.com/saltukkos/xiaomi-notebook-pro-bios-patcher
 
@@ -41,12 +50,12 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
     9. Now, we first pull out the power cable, then completely turn off the laptop (Start->Shutdown, not just close the lid), wait a minute, insert the cable, wait 5 seconds, turn on the laptop.
     10. Put back write protection for BIOS by executing: .\bios_lock.cmd
 
-    # Enabling Intel SpeedShift Technology (SST)
+    ** Enabling Intel SpeedShift Technology (SST) **
 
     0. Shift + Right Click on the Patch folder and select Open PowerShell window here. 
     1. Execute the following script: .\script speedshift_unlock.cmd
 
-    # Enable CPU undervolting feature
+    ** Enable CPU undervolting feature **
 
     0. Shift + Right Click on the Patch folder and select Open PowerShell window here. 
     1. Execute the following script: .\script voltage_unlock.cmd
@@ -56,11 +65,11 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
     0. Shift + Right Click on the Patch/Voltage Patch folder and select Open PowerShell window here.
     1. Execute the following script: .\Patcher
 
-    # Create a custom TDP profile
+    ** Create a custom TDP profile **
 
     - Edit and run the script .\TDP_set.cmd in a Windows PowerShell
 
-    # MacOS Patches
+    ** MacOS Patches **
 
     - Change the parameter DVMT: Edit and run the script .\DVMT_set.cmd in a Windows PowerShell
 
@@ -88,5 +97,6 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 - [PavelLJ](https://github.com/PavelLJ)
 - [saltukkos](https://github.com/saltukkos)
 - [cybsuai](https://github.com/cybsuai/)
+- Techtablets.com
 
 
