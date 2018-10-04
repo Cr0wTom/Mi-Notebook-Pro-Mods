@@ -78,18 +78,18 @@ Alternative method (From Russian Forum)
 ## Errors and Fixes
 
 1. The firmware dump utility reports:
-Error 318: The host CPU does not have read access to the target flash area. To enable read access for this operation you must modify the descriptor settings to give host access to this region. FPT Operation Failed.
-- it is necessary at least once to start BIOS update procedure, until the "unlockme" step inclusive, after that the procedure can be interrupted
+**Error 318**: The host CPU does not have read access to the target flash area. To enable read access for this operation you must modify the descriptor settings to give host access to this region. FPT Operation Failed.
+    - it is necessary at least once to start BIOS update procedure, until the "unlockme" step inclusive, after that the procedure can be interrupted
 
 2. Problems with security policies and the inability to run PowerShell scripts, for example: "The .\Patchscript_bue.ps1 file does not have a digital signature. The script can not be run..."
-- Execute the folllowing on PowerShell: powershell set-executionpolicy remotesigned
-- In group security policies, you must enable scripting for powershell
+    - Execute the folllowing on PowerShell: powershell set-executionpolicy remotesigned
+    - In group security policies, you must enable scripting for powershell
 
 3. Coolers after the patch are still kicked at 42°
-- check that the firmware update was successful: run again readEC.cmd, compare new ec.bin and ec604.bin, now they should be binary same
-- Repeat step 9, sometimes you need to juggle the cable several times (almost always more than one)
-- disconnect the power cable, hold the power button for a long time until the laptop switches off, wait a minute, connect the cable, wait 10 seconds, switch on
-- if the firmware update was successful, but all manipulations with the power cable was unsuccessful, then it remains only to throw off the battery cable for a couple of minutes, or just wait, sooner or later the EC will read new firmware, after one of the reboots or after a night's sleep.
+    - check that the firmware update was successful: run again readEC.cmd, compare new ec.bin and ec604.bin, now they should be binary same
+    - Repeat step 9, sometimes you need to juggle the cable several times (almost always more than one)
+    - disconnect the power cable, hold the power button for a long time until the laptop switches off, wait a minute, connect the cable, wait 10 seconds, switch on
+    - if the firmware update was successful, but all manipulations with the power cable was unsuccessful, then it remains only to throw off the battery cable for a couple of minutes, or just wait, sooner or later the EC will read new firmware, after one of the reboots or after a night's sleep.
 
 ## Credits
 
