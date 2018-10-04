@@ -34,7 +34,7 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 
     Several mods are available in the Patches folder. In order for them to work you need to be in the 603 BIOS version, so update if needed.
 
-    ** Fan Curve Patch **
+    ###### Fan Curve Patch  
 
     The default version is +12°, if you need the version +20°, replace ec604.bin with the corresponding one from the /EC folder. If you need to be able to charge the laptop through the hub, use the /EC502 folder. If you want to create your own profile, take the original EC file from the EC/Orig or EC502/Orig folder and edit using https://github.com/saltukkos/xiaomi-notebook-pro-bios-patcher
 
@@ -50,12 +50,12 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
     9. Now, we first pull out the power cable, then completely turn off the laptop (Start->Shutdown, not just close the lid), wait a minute, insert the cable, wait 5 seconds, turn on the laptop.
     10. Put back write protection for BIOS by executing: .\bios_lock.cmd
 
-    ** Enabling Intel SpeedShift Technology (SST) **
+    ###### Enabling Intel SpeedShift Technology (SST)  
 
     0. Shift + Right Click on the Patch folder and select Open PowerShell window here. 
     1. Execute the following script: .\script speedshift_unlock.cmd
 
-    ** Enable CPU undervolting feature **
+    ###### Enable CPU undervolting feature  
 
     0. Shift + Right Click on the Patch folder and select Open PowerShell window here. 
     1. Execute the following script: .\script voltage_unlock.cmd
@@ -65,11 +65,11 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
     0. Shift + Right Click on the Patch/Voltage Patch folder and select Open PowerShell window here.
     1. Execute the following script: .\Patcher
 
-    ** Create a custom TDP profile **
+    ###### Create a custom TDP profile  
 
     - Edit and run the script .\TDP_set.cmd in a Windows PowerShell
 
-    ** MacOS Patches **
+    ###### MacOS Patches  
 
     - Change the parameter DVMT: Edit and run the script .\DVMT_set.cmd in a Windows PowerShell
 
