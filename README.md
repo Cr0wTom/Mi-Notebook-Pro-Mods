@@ -1,5 +1,15 @@
 # Mi-Notebook-Pro-Mods
-Mod collection with instructions for the Xiaomi Mi Notebook Pro
+Mod collection with instructions for the Xiaomi Mi Notebook Pro:
+
+- BIOS Update
+- Fan Curve Patch
+- Intel SpeedShift Technology (SST) Enable
+- CPU undervolting feature enable
+- Create a custom TDP profile  
+- MacOS custom Installation
+- MacOS Patches
+- Intel ME Update
+- BIOS Patching
 
 Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 

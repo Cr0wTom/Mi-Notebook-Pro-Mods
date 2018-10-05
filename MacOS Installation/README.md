@@ -44,6 +44,32 @@ Required files for MacOS installation, including:
     - $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
     - We then run `install.command` file from the HiDPI folder. This program is used to avoid wake problems.
 
+## What is Working
+
+- Intel UHD 620 graphics (not the MX150, which is disabled via SSDT and will never work). Some minor glitches on boot
+- Keyboard
+- Trackpad
+- Backlight. Working in system preferences, but cannot be adjusted with default keys. It should be possible to map this using some external keyboard-shortcut-binding software.
+- Webcam
+- Sleep/Wake. (Does not work if you install Mac OS X on an external drive)
+- Audio from internal speakers.
+- Battery status. Sometimes it gets a while for the battery level to appear on the status bar.
+- Usb-c ports have been confirmed to work for display output.
+
+## Working with bugs
+
+- Audio from 3.5mm jack. (Fix in troubleshooting section)
+- HDMI-out. (Fix in troubleshooting section)
+
+## Not Working
+
+- Wireless Intel AC 8265, Bluetooth 4.1 (soldered Intel chip, will never work).
+    - Easy Solution: use USB wifi dongle (I use the TP-LINK TL-WN725N with available drivers from the companys website.).
+    - Hard Solution: See [Section 4 in this post](https://www.tonymacx86.com/threads/guide-xiaomi-mi-notebook-pro-high-sierra-10-13-6.242724/).
+- Fingerprint sensor (also probably will never work, not something I am interested in looking into).
+- NVIDIA MX 150. Disabled via SSDT, will never work.
+- SD Card Reader
+
 ## Credits
 
 - [RehabMan](https://github.com/RehabMan)
