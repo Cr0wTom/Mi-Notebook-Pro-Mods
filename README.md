@@ -77,7 +77,7 @@ Alternative method (From Russian Forum)
 
 ###### Create a custom TDP profile  
 
-- Edit and run the script .\TDP_set.cmd in a Windows PowerShell
+- Use the BIOS patcher and information from this [repo](https://github.com/saltukkos/xiaomi-notebook-pro-bios-patcher).
 
 ###### MacOS Patches  
 
