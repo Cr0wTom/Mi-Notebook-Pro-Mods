@@ -5,7 +5,7 @@ Mod collection with instructions for the Xiaomi Mi Notebook Pro:
 - Fan Curve Patch
 - Intel SpeedShift Technology (SST) Enable
 - CPU undervolting feature enable
-- Create a custom TDP profile  
+- Create a custom TDP profile
 - MacOS custom Installation
 - MacOS Patches
 - Intel ME Update
@@ -21,7 +21,7 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 
 ## BIOS Update
 
-1. Download Rufus (https://rufus.akeo.ie/) and format a usb to be “GPT Partitioning scheme for UEFI” and Filesystem set as “FAT32.” USB must be in the top USB port; usb boot does not work on the other.
+1. Download [Rufus](https://rufus.akeo.ie/) and format a usb to be “GPT Partitioning scheme for UEFI” and Filesystem set as “FAT32.” USB must be in the top USB port; usb boot does not work on the other.
 
 2. Copy the files from tha BIOS zip that you want to install (603 is the latest available BIOS at the time of writing), to the USB device partitioned earlier, and make sure that the EFI folder is placed at the root folder of the device.
 
@@ -46,7 +46,7 @@ Several mods are available in the Patches folder. In order for them to work you 
 
 ###### Fan Curve Patch  
 
-The default version is +12°, if you need the version +20°, replace ec604.bin with the corresponding one from the /EC folder. If you need to be able to charge the laptop through the hub, use the /EC502 folder. If you want to create your own profile, take the original EC file from the EC/Orig or EC502/Orig folder and edit using https://github.com/saltukkos/xiaomi-notebook-pro-bios-patcher
+The default version is +12°, if you need the version +20°, replace ec604.bin with the corresponding one from the /EC folder. If you need to be able to charge the laptop through the hub, use the /EC502 folder. If you want to create your own profile, take the original EC file from the EC/Orig or EC502/Orig folder and edit using the tool of this [repo](https://github.com/saltukkos/xiaomi-notebook-pro-bios-patcher).
 
 0. Shift + Right Click on the Patch folder and select Open PowerShell window here.
 1. Make a full backup of your BIOS firmware by executing the following: .\backup.cmd
@@ -74,10 +74,6 @@ Alternative method (From Russian Forum)
 
 0. Shift + Right Click on the Patch/Voltage Patch folder and select Open PowerShell window here.
 1. Execute the following script: .\Patcher
-
-###### Create a custom TDP profile  
-
-- Use the BIOS patcher and information from this [repo](https://github.com/saltukkos/xiaomi-notebook-pro-bios-patcher).
 
 ###### MacOS Patches  
 
