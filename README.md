@@ -101,6 +101,8 @@ Alternative method (From Russian Forum)
     - disconnect the power cable, hold the power button for a long time until the laptop switches off, wait a minute, connect the cable, wait 10 seconds, switch on
     - if the firmware update was successful, but all manipulations with the power cable was unsuccessful, then it remains only to throw off the battery cable for a couple of minutes, or just wait, sooner or later the EC will read new firmware, after one of the reboots or after a night's sleep.
 
+4. If powershell scripts fail, make sure PowerShell scripts execution is allowed on your Windows machine. Further info here: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6 .
+
 ## Credits
 
 - [PavelLJ](https://github.com/PavelLJ)
