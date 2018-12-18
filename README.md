@@ -39,6 +39,8 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 
 9. We can use same instructions as Step 4 to enable secure boot and other settings we may want.
 
+**Disclaimer:** Use the XMAKB5R0P0805 with caution. It has been dumped from the 1070 new models and not yet widely tested on earlier models. I will test it once I will find some more time.
+
 
 ## Mod Installation
 
