@@ -46,6 +46,8 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 
 Several mods are available in the Patches folder. In order for them to work you need to be in the 603 BIOS version, so update if needed.
 
+**UPDATE** For BIOS version 805 patches unzip the Patches/EC/EC805 Patches.zip file and use the appropriate files for patching. No 906 BIOS patches yet.
+
 ###### Fan Curve Patch  
 
 The default version is +12°, if you need the version +20°, replace ec604.bin with the corresponding one from the /EC folder. If you need to be able to charge the laptop through the hub, use the /EC502 folder. If you want to create your own profile, take the original EC file from the EC/Orig or EC502/Orig folder and edit using the tool of this [repo](https://github.com/saltukkos/xiaomi-notebook-pro-bios-patcher).
