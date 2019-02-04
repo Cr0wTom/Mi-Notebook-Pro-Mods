@@ -21,7 +21,7 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 
 ## BIOS Update
 
-**UPDATE** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation. 
+**UPDATE:** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation. 
 
 1. Download [Rufus](https://rufus.akeo.ie/) and format a usb to be “GPT Partitioning scheme for UEFI” and Filesystem set as “FAT32.” USB must be in the top USB port; usb boot does not work on the other.
 
@@ -47,7 +47,7 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 
 Several mods are available in the Patches folder. In order for them to work you need to be in the 603 BIOS version, so update if needed.
 
-**UPDATE** For BIOS version 805 patches unzip the Patches/EC/EC805 Patches.zip file and use the appropriate files for patching. No 906 BIOS patches yet.
+**UPDATE:** For BIOS version 805 patches unzip the Patches/EC/EC805 Patches.zip file and use the appropriate files for patching. No 906 BIOS patches yet.
 
 ###### Fan Curve Patch  
 
@@ -85,6 +85,10 @@ Alternative method (From Russian Forum)
 - Change the parameter DVMT: Edit and run the script .\DVMT_set.cmd in a Windows PowerShell
 
 - 0xE2 Lock: Run the script .\CFG_unlock.cmd
+
+###### Official fan noise fix and always on keyboard enable
+
+- Just install the XMAKB5R0P0906 BIOS update and alter the keyboard option in the BIOS menu.
 
 ## Errors and Fixes
 
