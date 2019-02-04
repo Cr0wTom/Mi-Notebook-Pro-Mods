@@ -21,6 +21,8 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 
 ## BIOS Update
 
+**UPDATE** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation. 
+
 1. Download [Rufus](https://rufus.akeo.ie/) and format a usb to be “GPT Partitioning scheme for UEFI” and Filesystem set as “FAT32.” USB must be in the top USB port; usb boot does not work on the other.
 
 2. Copy the files from tha BIOS zip that you want to install (603 is the latest available BIOS at the time of writing), to the USB device partitioned earlier, and make sure that the EFI folder is placed at the root folder of the device.
@@ -40,7 +42,6 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 9. We can use same instructions as Step 4 to enable secure boot and other settings we may want.
 
 **Disclaimer:** Use the XMAKB5R0P0805 with caution. It has been dumped from the 1070 new models and not yet widely tested on earlier models. I will test it once I will find some more time.
-
 
 ## Mod Installation
 
