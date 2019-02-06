@@ -94,6 +94,34 @@ Alternative method (From Russian Forum)
 
 - Just install the XMAKB5R0P0906 BIOS update and alter the keyboard option in the BIOS menu.
 
+###### Slow SSD Speeds
+
+- To fix the slow SSD speeds (below 1900mb/s) install any BIOS from 300 and newer. (I would suggest 906 which is the latest one right now)
+
+###### Undervolt and CPU Boost
+
+- Download the latest XTU tool from [intel.](https://downloadcenter.intel.com/download/24075/Intel-Extreme-Tuning-Utility-Intel-XTU-)
+
+- Alter the following settings: 
+    - Turbo Boost Power Max: 35.00 W (You can try going up to 40 W)
+    - Core Voltage Offset: -0.100 V (You can try going higher but it may result in crashes and blue screens)
+
+- Click Apply and reboot.
+
+###### Overclock MX150 GPU
+
+- Download the latest [MSI Afterburner.](https://www.msi.com/page/afterburner)
+
+- Save a profile with the default settings
+
+- Alter the following settings:
+    - Memory Clock: +1000 MHz
+    - Core Clock: +60 MHz
+
+- Save the new settings in a new profile
+
+- Test for stability with games and benchmarks. If it isn't stable enought lower the settings.
+
 ## Errors and Fixes
 
 1. The firmware dump utility reports:
