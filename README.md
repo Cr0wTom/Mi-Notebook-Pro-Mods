@@ -20,6 +20,7 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 **Disclaimer 3:** If you use BitLocker encryption in your drive, keep your keys stored somewhere safe, as you might need them to decrypt your drive after BIOS updates or mods.
 
 **Latest Available BIOS:** XMAKB5R0P0906
+
 **[Official Driver Download Link](https://www.mi.com/service/bijiben/drivers/15/)**
 
 ## BIOS Update
