@@ -19,9 +19,10 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
     
 **Disclaimer 3:** If you use BitLocker encryption in your drive, keep your keys stored somewhere safe, as you might need them to decrypt your drive after BIOS updates or mods.
 
-## BIOS Update
+**Latest Available BIOS:** XMAKB5R0P0906
+**[Official Driver Download Link](https://www.mi.com/service/bijiben/drivers/15/)**
 
-**UPDATE:** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation. 
+## BIOS Update
 
 1. Download [Rufus](https://rufus.akeo.ie/) and format a usb to be “GPT Partitioning scheme for UEFI” and Filesystem set as “FAT32.” USB must be in the top USB port; usb boot does not work on the other.
 
@@ -42,6 +43,8 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 9. We can use same instructions as Step 4 to enable secure boot and other settings we may want.
 
 **Disclaimer:** Use the XMAKB5R0P0805 with caution. It has been dumped from the 1070 new models and not yet widely tested on earlier models. I will test it once I will find some more time.
+
+**UPDATE:** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation. 
 
 ## Mod Installation
 
