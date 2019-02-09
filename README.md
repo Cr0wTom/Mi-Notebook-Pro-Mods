@@ -104,7 +104,7 @@ Alternative method (From Russian Forum)
 
 - Alter the following settings: 
     - Turbo Boost Power Max: 35.00 W (You can try going up to 40 W)
-    - Core Voltage Offset: -0.100 V (You can try going higher but it may result in crashes and blue screens)
+    - Core Voltage Offset: -0.100 V (You can try going lower but it may result in crashes and blue screens)
 
 - Click Apply and reboot.
 
