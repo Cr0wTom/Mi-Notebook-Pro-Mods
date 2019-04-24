@@ -45,6 +45,8 @@ Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
 
 **Disclaimer:** Use the XMAKB5R0P0805 with caution. It has been dumped from the 1070 new models and not yet widely tested on earlier models. I will test it once I will find some more time.
 
+**Downgrade** To downgrade to an earlier supported BIOS you have to open the platform.ini file that exists inside the BIOS zip and locate the string **[Bios_Version_Check] Flag=1** and change it to Flag=0. After that you follow the BIOS update directions from above.
+
 **UPDATE:** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation. 
 
 ## Mod Installation
@@ -146,6 +148,7 @@ Alternative method (From Russian Forum)
 - [saltukkos](https://github.com/saltukkos)
 - [cybsuai](https://github.com/cybsuai/)
 - Techtablets.com
+- [HWupgrade.it](https://www.hwupgrade.it/forum/showthread.php?t=2861428)
 
 ## Support
 
