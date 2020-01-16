@@ -1,4 +1,4 @@
-# Mi Notebook Pro for macOS Mojave & High Sierra
+# Mi Notebook Pro for macOS Catalina
 
 Required files for MacOS installation, including:
 
@@ -43,6 +43,15 @@ Required files for MacOS installation, including:
 - In order to open native Apple HiDPI settings for non-Retina screen(no need for RDM), we have to run the following in a terminal window:
     - $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
     - We then run `install.command` file from the HiDPI folder. This program is used to avoid wake problems.
+- There are new kexts to fix the bluetooth issues and now Bluetooth can work from cold boot with not so many issues. Kexts can be found [here](https://github.com/zxystd/IntelBluetoothFirmware). Process thanks to [jackreeves](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/issues/323#issuecomment-570912337)
+    - Mount EFI using Clover Configurator
+    - Ensure using latest kexts in EFI.
+    - Add both `IntelBluetoothFirmware.kext` and `IntelBluetoothInjector.kext` to `/EFI/CLOVER/Kext/Other`
+    - Remove startup script id installed for booting drivers via VMware
+    - Rebuild kext using terminal command `sudo kextcache -i /`
+    - Shutdown not restart and wait for 10 sec, Power on
+    - Rebuild kext using terminal command `sudo kextcache -i /`
+    - Shutdown not restart and wait for 10 sec, Power on
 
 ## What is Working
 
@@ -60,10 +69,11 @@ Required files for MacOS installation, including:
 
 - Audio from 3.5mm jack. (Fix in troubleshooting section)
 - HDMI-out. (Fix in troubleshooting section)
+- Bluetooth 4.1 (Fix in troubleshooting section)
 
 ## Not Working
 
-- Wireless Intel AC 8265, Bluetooth 4.1 (soldered Intel chip, will never work).
+- Wireless Intel AC 8265 (soldered Intel chip, will never work).
     - Easy Solution: use USB wifi dongle (I use the TP-LINK TL-WN725N with available drivers from the companys website.).
     - Hard Solution: See [Section 4 in this post](https://www.tonymacx86.com/threads/guide-xiaomi-mi-notebook-pro-high-sierra-10-13-6.242724/).
 - Fingerprint sensor (also probably will never work, not something I am interested in looking into).
@@ -84,10 +94,14 @@ Required files for MacOS installation, including:
 - [stevezhengshiqi](https://github.com/stevezhengshiqi)
 - [xzhih](https://github.com/xzhih)
 - [zysuper](https://github.com/zysuper)
+- [zxystd](https://github.com/zxystd)
+- [jackreeves](https://github.com/jackreeves)
+- [daliansky](https://github.com/daliansky)
 
 ## Support and discussion
 
 - [[Guide] Xiaomi Mi Notebook Pro High Sierra 10.13.6](https://www.tonymacx86.com/threads/guide-xiaomi-mi-notebook-pro-high-sierra-10-13-6.242724)
+- [Dalianskys Repo](https://github.com/daliansky/XiaoMi-Pro-Hackintosh)
 
-- Last sources update: 9-28-2018
-- Support for MacOS High Sierra and Mojave
+- Last sources update: 16-01-2020
+- Support for MacOS Catalina, High Sierra and Mojave
