@@ -1,28 +1,29 @@
-/*
- * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180810 (64-bit version)
- * Copyright (c) 2000 - 2018 Intel Corporation
- * 
- * Disassembling to symbolic ASL+ operators
- *
- * Disassembly of iASLe7xJcH.aml, Tue Sep 18 11:15:04 2018
- *
- * Original Table Header:
- *     Signature        "SSDT"
- *     Length           0x0000003F (63)
- *     Revision         0x02
- *     Checksum         0xFA
- *     OEM ID           "hack"
- *     OEM Table ID     "PMCR"
- *     OEM Revision     0x00000000 (0)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
- */
+// NOT Necessary hotpatch
+// Maintained by: stevezhengshiqi
+// Reference: https://github.com/syscl/XPS9350-macOS/blob/master/DSDT/patches/syscl_PPMCnPMCR.txt by syscl
+// PPMC and PMCR combine together for macOS to load LPCB correctly
+
 DefinitionBlock ("", "SSDT", 2, "hack", "_PMCR", 0x00000000)
 {
-    Device (_SB.PCI0.PMCR)
+    External (_SB_.PCI0, DeviceObj)
+
+    Scope (_SB.PCI0)
     {
-        Name (_ADR, 0x001F0002)  // _ADR: Address
+        Device (PMCR)
+        {
+            Name (_ADR, 0x001F0002)  // _ADR: Address
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }
     }
 }
 

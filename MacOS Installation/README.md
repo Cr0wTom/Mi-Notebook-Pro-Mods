@@ -17,6 +17,8 @@ Required files for MacOS installation, including:
 4. We mount the EFI partition using [EFI Mounter](https://www.tonymacx86.com/resources/efi-mounter-v3.280/) and replace the whole EFI folder with the one from this repo.
 5. You are ready to rolll...
 
+**Update:** There is a really handy bash script that automates most of the post installation and fixes parts for MacOS on Mi Notebook Pro (MX version) that daliansky made and you can find it in his [repo.](https://github.com/daliansky/XiaoMi-Pro-Hackintosh) Just clone the repo and run the install.sh script in Terminal.
+
 ## Troubleshooting 
 
 - If headphones are not working, use the ALCPlugFix from the folder, and run `install.command` in a Terminal, and restart to patch the audio driver.
@@ -52,6 +54,7 @@ Required files for MacOS installation, including:
     - Shutdown not restart and wait for 10 sec, Power on
     - Rebuild kext using terminal command `sudo kextcache -i /`
     - Shutdown not restart and wait for 10 sec, Power on
+- In this tutorial we do not mention how to configure your plist with new serial number and customized info. For that reason to fix iMessage and other Mac related services follow [this](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) guide, it never failed me. 
 
 ## What is Working
 

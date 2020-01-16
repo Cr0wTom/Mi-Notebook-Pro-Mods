@@ -1,28 +1,29 @@
-/*
- * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180810 (64-bit version)
- * Copyright (c) 2000 - 2018 Intel Corporation
- * 
- * Disassembling to symbolic ASL+ operators
- *
- * Disassembly of iASLuJr9t0.aml, Tue Sep 18 11:13:32 2018
- *
- * Original Table Header:
- *     Signature        "SSDT"
- *     Length           0x0000003F (63)
- *     Revision         0x02
- *     Checksum         0x1A
- *     OEM ID           "hack"
- *     OEM Table ID     "EC"
- *     OEM Revision     0x00000000 (0)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
- */
+// Necessary hotpatch, pair with USBPorts.kext
+// Maintained by: stevezhengshiqi
+// Reference: https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra-and-later.222266 by Rehabman
+// Inject Fake EC device to load AppleBusPowerController, working with SSDT-USB
+
 DefinitionBlock ("", "SSDT", 2, "hack", "_EC", 0x00000000)
 {
-    Device (_SB.EC)
+    External (_SB_.PCI0.LPCB, DeviceObj)
+
+    Scope (_SB.PCI0.LPCB)
     {
-        Name (_HID, "EC000000")  // _HID: Hardware ID
+        Device (EC)
+        {
+            Name (_HID, "EC000000")  // _HID: Hardware ID
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }
     }
 }
 

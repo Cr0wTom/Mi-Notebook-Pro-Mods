@@ -50,10 +50,6 @@
 			<string>org.tw.CodecCommander</string>
 			<key>Codec Profile</key>
 			<dict>
-				<key>1002</key>
-				<string>Disabled HDMI</string>
-				<key>10de</key>
-				<string>Disabled HDMI</string>
 				<key>10ec_0233</key>
 				<string>Realtek ALC283,etc</string>
 				<key>10ec_0235</key>
@@ -84,8 +80,6 @@
 				<string>Realtek ALC892 desktop</string>
 				<key>10ec_0900</key>
 				<string>Realtek ALC1150</string>
-				<key>8086</key>
-				<string>Disabled HDMI</string>
 				<key>Default</key>
 				<dict>
 					<key>Check Infinitely</key>
@@ -294,18 +288,6 @@
 						</dict>
 						<dict>
 							<key>Command</key>
-							<data>AacHIw==</data>
-							<key>Comment</key>
-							<string>0x1a SET_PIN_WIDGET_CONTROL 0x23</string>
-							<key>On Init</key>
-							<true/>
-							<key>On Sleep</key>
-							<false/>
-							<key>On Wake</key>
-							<true/>
-						</dict>
-						<dict>
-							<key>Command</key>
 							<data>AhcIgw==</data>
 							<key>Comment</key>
 							<string>0x21 SET_UNSOLICITED_ENABLE 0x83</string>
@@ -318,8 +300,6 @@
 						</dict>
 					</array>
 					<key>Perform Reset</key>
-					<false/>
-					<key>Perform Reset on External Wake</key>
 					<false/>
 					<key>Send Delay</key>
 					<integer>10</integer>
