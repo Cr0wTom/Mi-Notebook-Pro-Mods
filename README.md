@@ -152,7 +152,4 @@ Alternative method (From Russian Forum)
 
 ## Support
 
-Feel free to support me with crypto or buy me a beer in Prague :D
-
-- bitcoin:1NDPDkzu8w3hec2yUi15GSNbbR4qzCQQZH
-- bitcoincash:qq90vewyt3q0pr0ljwpv6spvkhmzdrv4hq72pwgllz
+Feel free to support me or buy me a beer in Prague :D
