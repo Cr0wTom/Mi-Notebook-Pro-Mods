@@ -67,21 +67,21 @@ Required files for MacOS installation, including:
 - Audio from internal speakers.
 - Battery status. Sometimes it gets a while for the battery level to appear on the status bar.
 - Usb-c ports have been confirmed to work for display output.
+- Bluetooth 4.1 (Fix in troubleshooting section)
 
 ## Working with bugs
 
 - Audio from 3.5mm jack. (Fix in troubleshooting section)
 - HDMI-out. (Fix in troubleshooting section)
-- Bluetooth 4.1 (Fix in troubleshooting section)
+- Wireless Intel AC 8265 (for now see [here](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/issues/330#issuecomment-582377174), i will keep updating)
+    - Easy Solution: use USB wifi dongle (I use the TP-LINK TL-WN725N with available drivers from the companys website.).
+    - Hard Solution: See [Section 4 in this post](https://www.tonymacx86.com/threads/guide-xiaomi-mi-notebook-pro-high-sierra-10-13-6.242724/).
 
 ## Not Working
 
-- Wireless Intel AC 8265 (soldered Intel chip, will never work).
-    - Easy Solution: use USB wifi dongle (I use the TP-LINK TL-WN725N with available drivers from the companys website.).
-    - Hard Solution: See [Section 4 in this post](https://www.tonymacx86.com/threads/guide-xiaomi-mi-notebook-pro-high-sierra-10-13-6.242724/).
-- Fingerprint sensor (also probably will never work, not something I am interested in looking into).
-- NVIDIA MX 150. Disabled via SSDT, will never work.
-- SD Card Reader
+- Fingerprint sensor (probably will never work).
+- NVIDIA MX 150. Disabled via SSDT (probably will never work).
+- SD Card Reader (probably will never work).
 
 ## Credits
 
