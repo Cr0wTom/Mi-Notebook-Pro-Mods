@@ -11,7 +11,7 @@ Mod collection with instructions for the Xiaomi Mi Notebook Pro:
 - Intel ME Update
 - BIOS Patching
 
-Modification collection for the i5/i7 Mi Notebook Pro (with the MX150 GPU).
+Modification collection for the i5/i7 (8th Gen) Mi Notebook Pro (with the MX150 GPU).
 
 **Disclaimer 1:** Before every mod ensure that you have AT LEAST 80% battery and that you are pluged in to a power outlet, unless stated otherwise.
 
