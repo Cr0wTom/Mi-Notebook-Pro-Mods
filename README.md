@@ -47,7 +47,9 @@ Modification collection for the i5/i7 (8th Gen) Mi Notebook Pro (with the MX150 
 
 **Downgrade** To downgrade to an earlier supported BIOS you have to open the platform.ini file that exists inside the BIOS zip and locate the string **[Bios_Version_Check] Flag=1** and change it to Flag=0. After that you follow the BIOS update directions from above.
 
-**UPDATE:** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation. 
+**UPDATE:** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation.
+
+**UPDATE 2:** The new XMAKB5R0P0A07 BIOS update comes in a .exe format so use at your own risk. It is stable from my testing with no obvious backdoors, it comes from a trusted source, but you never know...
 
 ## Mod Installation
 
