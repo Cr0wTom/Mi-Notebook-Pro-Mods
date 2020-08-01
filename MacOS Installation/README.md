@@ -58,7 +58,7 @@ Required files for MacOS installation, including:
 
 ## WiFi Installation
 
-As many of you know, there is huge progress in the Intel WiFi comunithy, and there is a stable way to use Mi Notebook Pro's internal WiFi. There are 2 projects right now, one [using the native WiFi usage of MacOS](https://github.com/AppleIntelWifi/adapter) and the other one [spoofing Ethernet](https://github.com/AppleIntelWifi/adapter), which is the one we will use and the most stable one right now. I've updated the kexts EFI folder with the itwlm kext needed for WiFi to work. After the installation, copy the [HeliPort](https://github.com/zxystd/HeliPort) app in your Application folder and make it run with boot. This will present a wifi icon in your menu bar which you can use to connect to WiFi networks. For now, HeliPort isn't supporting a way to remember old WiFi networks, but I will update the repo once this is possible. :) Enjoy.s
+As many of you know, there is huge progress in the Intel WiFi comunithy, and there is a stable way to use Mi Notebook Pro's internal WiFi. There is a woring project which [spoofs Ethernet](https://github.com/AppleIntelWifi/adapter), and I can safelly say that right now is really stable. After the installation, copy the [HeliPort](https://github.com/zxystd/HeliPort) app in your Application folder(which is also really stable right now) and make it run with boot. This will present a wifi icon in your menu bar which you can use to connect to WiFi networks. :) Enjoy
 
 ## What is Working
 
@@ -68,18 +68,14 @@ As many of you know, there is huge progress in the Intel WiFi comunithy, and the
 - Backlight. Working in system preferences, but cannot be adjusted with default keys. It should be possible to map this using some external keyboard-shortcut-binding software.
 - Webcam
 - Sleep/Wake. (Does not work if you install Mac OS X on an external drive)
-- Audio from internal speakers.
+- Audio (Speakers and jack)
+- HDMI
 - Battery status. Sometimes it gets a while for the battery level to appear on the status bar.
 - Usb-c ports have been confirmed to work for display output.
 - Bluetooth 4.1 (Fix in troubleshooting section)
 - Wireless Intel AC 8265 (for now see [here](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/issues/330#issuecomment-582377174), i will keep updating)
     - Easy Solution: use USB wifi dongle (I use the TP-LINK TL-WN725N with available drivers from the companys website.).
     - Hard Solution: See [Section 4 in this post](https://www.tonymacx86.com/threads/guide-xiaomi-mi-notebook-pro-high-sierra-10-13-6.242724/).
-
-## Working with bugs
-
-- Audio from 3.5mm jack. (Fix in troubleshooting section)
-- HDMI-out. (Fix in troubleshooting section)
 
 ## Not Working
 
