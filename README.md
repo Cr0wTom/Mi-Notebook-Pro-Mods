@@ -49,7 +49,7 @@ Modification collection for the i5/i7 (8th Gen) Mi Notebook Pro (with the MX150 
 
 **UPDATE:** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation.
 
-**UPDATE 2:** The new XMAKB5R0P0A07 BIOS update comes in a .exe format so use at your own risk. It is stable from my testing with no obvious backdoors, it comes from a trusted source, but you never know...
+**UPDATE 2:** The new XMAKB5R0P0A07 and XMAKB5R0P0E07 BIOS's update come in a .exe format so use at your own risk. It is stable from my testing with no obvious backdoors, it comes from a trusted source, but you never know...
 
 ## Mod Installation
 
