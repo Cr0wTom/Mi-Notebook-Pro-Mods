@@ -1,3 +1,5 @@
+!! Laptop has been sold, so there will be no meaningful updates in this repo any more :) Thank you for your support all these years. 
+
 # Mi-Notebook-Pro-Mods
 Mod collection with instructions for the Xiaomi Mi Notebook Pro:
 
