@@ -22,7 +22,7 @@ Modification collection for the i5/i7 (8th Gen) Mi Notebook Pro (with the MX150 
     
 **Disclaimer 3:** If you use BitLocker encryption in your drive, keep your keys stored somewhere safe, as you might need them to decrypt your drive after BIOS updates or mods.
 
-**Latest Available BIOS:** XMAKB5R0P0906
+**Latest Available BIOS:** XMAKB5R0P0E07
 
 **[Official Driver Download Link](https://www.mi.com/service/bijiben/drivers/15/)**
 
@@ -146,6 +146,20 @@ Alternative method (From Russian Forum)
     - if the firmware update was successful, but all manipulations with the power cable was unsuccessful, then it remains only to throw off the battery cable for a couple of minutes, or just wait, sooner or later the EC will read new firmware, after one of the reboots or after a night's sleep.
 
 4. If powershell scripts fail, make sure PowerShell scripts execution is allowed on your Windows machine. Further info [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6).
+
+5. Supervisor password is unknown
+    - download HxD Hex editor ](https://mh-nexus.de/en/hxd/) and **Intel Flash Programming Tool**
+    - open powershell as administrator and move to the folder containing FPTW64.exe
+    - execute .\FPTW64.exe -bios -d bios_backup.bin
+    - open bios_backup.bin inside HxD and search for following hex-values **00 65 00 72 00 76 00 69 00 73 00 6F 00 72 00 50**
+    - the decoded text section will show something like this **{S.y.s.t.e.m.S.u.p.e.r.v.i.s.o.r.P.w.....(this area will contain your password)aU?**
+
+6. Supervisor password recovered from BIOS dump is not working
+    - download BIOS version XMAKB5R0P0906 or older
+    - open the platform.ini file that exists inside the BIOS zip and change following flags:
+        - **[Bios_Version_Check] Flag=1** and change it to Flag=0
+        - **[ForceFlash] Password=0** and change it to Password=1
+    - flash the BIOS with the flashing utility (H2OFFT-Wx64.exe) or with the instructions from [link](## BIOS Update) depending on downloaded BIOS version
 
 ## Credits
 
