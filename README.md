@@ -148,7 +148,7 @@ Alternative method (From Russian Forum)
 4. If powershell scripts fail, make sure PowerShell scripts execution is allowed on your Windows machine. Further info [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6).
 
 5. Supervisor password is unknown
-    - download HxD Hex editor ](https://mh-nexus.de/en/hxd/) and [Intel FPTW64](https://www.badcaps.net/forum/attachment.php?attachmentid=244970&d=1632072808)
+    - download HxD Hex editor ](https://mh-nexus.de/en/hxd/) and **Intel Flash Programming Tool**
     - open powershell as administrator and move to the folder containing FPTW64.exe
     - execute .\FPTW64.exe -bios -d bios_backup.bin
     - open bios_backup.bin inside HxD and search for following hex-values **00 65 00 72 00 76 00 69 00 73 00 6F 00 72 00 50**
