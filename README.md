@@ -38,9 +38,10 @@ Modification collection for the i5/i7 (8th Gen) Mi Notebook Pro (with the MX150 
 
 5. Switch on and keep pressing F12 to enter boot selection menu, where we select the USB drive. The UEFI shell should load until we see a fs: .
 
-6. We type unlockme in the to unlock bios. This is will boot into windows but there is a high chance we wont be able to login. Shutdown the PC.
+6. We type `unlockme` in the to unlock bios. This is will boot into windows but there is a high chance we wont be able to login. Shutdown the PC.
 
-7. Repeat step 5 and then we type flash to begin the flash process. This will reboot and start flashing. BE PATIENT and let it finish. It will boot into windows finally.
+7. Repeat step 5 and then we type `flash` to begin the flash process. This will reboot and start flashing. BE PATIENT and let it finish. It will boot into windows finally.  
+*If you have errors related to access to BIOS while bios firmware updating, try after reboot to press `F12`, then choose your flash drive and then type `flash` command.*
 
 8. Fingerprint might not work, we will need to type in our password to log in.
 
@@ -50,7 +51,10 @@ Modification collection for the i5/i7 (8th Gen) Mi Notebook Pro (with the MX150 
 
 **Downgrade** To downgrade to an earlier supported BIOS you have to open the platform.ini file that exists inside the BIOS zip and locate the string **[Bios_Version_Check] Flag=1** and change it to Flag=0. After that you follow the BIOS update directions from above.
 
-**UPDATE:** For the latest XMAKB5R0P0906 BIOS update, just unzip the folder and execute the H2OFFT-Wx64.exe executable, in a Windows installation.
+**UPDATE:** For the latest XMAKB5R0P0906 BIOS update there are 2 archives: for linux/mac and for windows.   
+- Linux/MacOS unzip `XMAKB5R0P0906-for-linux-mac.zip` to a USB flash drive. 
+- Windows - just unzip the folder and execute the `H2OFFT-Wx64.exe` executable, in a Windows installation.
+
 
 **UPDATE 2:** The new XMAKB5R0P0A07 and XMAKB5R0P0E07 BIOS's update come in a .exe format so use at your own risk. It is stable from my testing with no obvious backdoors, it comes from a trusted source, but you never know...
 
